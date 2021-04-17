@@ -17,8 +17,9 @@ function setup() {
 	world = engine.world;
 	
 	groundObject=new ground(width/2,670,width,20);
-	dustbinObj=new dustbin(1200,650);
 	paper = new Paper(200,650);
+	dustbinObj=new dustbin(1200,650);
+	
 
 	Engine.run(engine);
   
@@ -29,8 +30,9 @@ function draw() {
   rectMode(CENTER);
   background(230);
   groundObject.display();
+  paper.display(); 
   dustbinObj.display();
-  paper.display();
+  
 }
 
 function keyPressed() {
